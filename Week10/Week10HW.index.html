@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JS Objects Lesson</title>
+  </head>
+  <body>
+    <h1>Open the Console to see your output!</h1>
+
+    <script>
+      const person = {
+        name: "Alex",
+        age: 22,
+        isStudent: true,
+      };
+      console.log(person);
+
+      const movie = {
+        title: "Inception",
+        year: 2010,
+        director: "Christopher Nolan",
+      };
+      console.log(movie.title);
+      console.log(movie["director"]);
+      let field = "year";
+      console.log(movie[field]);
+
+      const car = {
+        make: "Toyota",
+        model: "Camry",
+        year: 2020,
+      };
+      car.year = 2024;
+      car.color = "blue";
+      delete car.model;
+      console.log(car);
+
+      const dog = {
+        name: "Biscuit",
+        breed: "Beagle",
+        bark() {
+          console.log(this.name + " says: Woof!");
+        },
+      };
+      dog.bark();
+
+      dog.describe = function () {
+        console.log(this.name + " is a " + this.breed);
+      };
+      dog.describe();
+
+      const laptop = {
+        brand: "Apple",
+        model: "MacBook Pro",
+        ram: 16,
+        storage: 512,
+      };
+      console.log(Object.keys(laptop));
+      console.log(Object.values(laptop));
+      console.log(Object.entries(laptop));
+
+      const book = {
+        title: "The Great Gatsby",
+        author: "F. Scott Fitzgerald",
+        pages: 180,
+        isAvailable: true,
+      };
+      console.log(book.title);
+      console.log(book["author"]);
+
+      book.genre = "Classic Fiction";
+      book.isAvailable = false;
+
+      book.describe = function () {
+        console.log(this.title + " by " + this.author + " — " + this.pages + " pages");
+      };
+      book.describe();
+
+      console.log(Object.keys(book));
+    </script>
+  </body>
+</html>
