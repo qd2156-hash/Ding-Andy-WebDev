@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Practice Log – Ink Harmony</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg ink-navbar">
+    <div class="container">
+      <a class="navbar-brand ink-brand" href="index.html">Ink Harmony</a>
+      <button class="navbar-toggler ink-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link ink-nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link ink-nav-link" href="masters.html">Masters</a></li>
+          <li class="nav-item"><a class="nav-link ink-nav-link" href="timeline.html">Timeline</a></li>
+          <li class="nav-item"><a class="nav-link ink-nav-link" href="tools.html">Tools Guide</a></li>
+          <li class="nav-item"><a class="nav-link ink-nav-link" href="practice-log.html">Practice Log</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container text-center">
+      <h1>Practice Log</h1>
+      <div class="section-line"></div>
+      <p class="page-hero-sub">A place for me to keep track of my practice sessions.</p>
+    </div>
+  </section>
+
+  <section class="section-block">
+    <div class="container">
+      <div class="row g-5">
+
+        <div class="col-12 col-lg-5">
+          <div class="log-form-wrap">
+            <h3 class="log-form-title">Add a Session</h3>
+            <form id="log-form">
+              <div class="mb-3">
+                <label class="form-label ink-label" for="log-date">Date:</label>
+                <input class="form-control ink-input" type="date" id="log-date" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label ink-label" for="log-duration">Duration (minutes):</label>
+                <input class="form-control ink-input" type="number" id="log-duration" min="1" placeholder="e.g. 45" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label ink-label" for="log-script">Script Style:</label>
+                <select class="form-control ink-input" id="log-script" required>
+                  <option value="">— Select —</option>
+                  <option value="Seal Script">Seal Script</option>
+                  <option value="Clerical Script">Clerical Script</option>
+                  <option value="Cursive Script">Cursive Script</option>
+                  <option value="Running Script">Running Script</option>
+                  <option value="Regular Script">Regular Script</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label class="form-label ink-label" for="log-notes">Notes:</label>
+                <textarea class="form-control ink-input ink-textarea" id="log-notes" placeholder="What did you practise today?"></textarea>
+              </div>
+              <button class="submit-button" type="submit">Add Entry</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-7">
+          <div class="log-list-header">
+            <h3 class="log-form-title">Session Records</h3>
+            <div id="log-stats" class="log-stats"></div>
+          </div>
+          <div id="log-list"></div>
+          <p id="log-empty" class="log-empty-msg">No sessions recorded yet. Add your first session on the left!</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="page-footer">
+    <div class="container">
+      <p>© 2026 Ink Harmony. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="practice-log.js"></script>
+</body>
+</html>

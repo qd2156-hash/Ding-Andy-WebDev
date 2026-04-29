@@ -1,0 +1,3 @@
+[The link Proposal Slides User sees](https://docs.google.com/presentation/d/1I3QLfl6mRf_l8_FvI20L52twprr9_ib8/edit?usp=sharing&ouid=116588533557674221848&rtpof=true&sd=true)
+[The link Presentation Slides User Sees](https://docs.google.com/presentation/d/1LxLKFcbph4JVyGcsqsOgk_HcZihu75wC/edit?usp=sharing&ouid=116588533557674221848&rtpof=true&sd=true)
+[The link Live Hosted Site User Sees](https://qd2156-hash.github.io/ANDY_WebFinal/)
